@@ -1,0 +1,6 @@
+import { examples } from '$lib/examples';
+import { redirect } from '@sveltejs/kit';
+
+export async function load() {
+	throw redirect(303, `/${Object.keys(examples)[0]}`);
+}
