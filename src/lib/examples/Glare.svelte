@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { oneLight } from 'svelte-highlight/styles';
 	import { spring } from 'svelte/motion';
 
 	const smooth = { stiffness: 0.066, damping: 0.25 };
