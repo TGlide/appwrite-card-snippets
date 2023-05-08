@@ -10,10 +10,12 @@
 	<title>Appwrite Card Snippets</title>
 </svelte:head>
 
-<main class="min-h-screen p-4">
-	<div class="flex justify-center">
+<main
+	class="qhd:grid mx-auto flex h-screen max-w-[1440px] grid-cols-12 flex-col overflow-hidden p-4"
+>
+	<div class="col-span-12 flex justify-center">
 		<ol
-			class=" flex min-w-[200px] flex-col items-start justify-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-4"
+			class="flex min-w-[200px] items-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 p-4"
 		>
 			{#each Object.keys(examples) as example}
 				<li>

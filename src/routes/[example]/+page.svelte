@@ -17,11 +17,11 @@
 	{@html theme}
 </svelte:head>
 
-<div class="relative z-10 mt-8 grid place-items-center">
+<div class="relative z-10 col-span-6 mt-8 grid place-items-center">
 	<svelte:component this={data.example.component} />
 </div>
 
-<div class="relative mx-auto mt-8 h-96 w-full max-w-3xl overflow-hidden rounded-md">
+<div class="relative col-span-6 mt-8 overflow-hidden rounded-md">
 	<button class="absolute right-4 top-4 transition hover:opacity-75" on:click={handleCopy}>
 		{copied ? 'Copied!' : 'Copy'}
 	</button>
